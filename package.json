@@ -1,0 +1,53 @@
+{
+  "name": "contexts-wrapper",
+  "version": "0.0.1",
+  "description": "Simplify providing contexts",
+  "cdn": "dist/index.umd.js",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "jsdelivr": "dist/index.umd.js",
+  "umd:main": "dist/index.umd.js",
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "author": {
+    "name": "Robson William da Silva Matos",
+    "url": "https://github.com/dattebayorob",
+    "email": "robson.william65@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dattebayorob/contexts-wrapper.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "bili",
+    "prepublishOnly": "yarn run test && yarn run build"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "babel-jest": "^26.1.0",
+    "bili": "^5.0.5",
+    "jest": "^26.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "ts-jest": "^26.1.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.7"
+  }
+}
